@@ -247,13 +247,14 @@ presets:
 
       noon_update:
         name: "午间热点"
-        start: "13:00"
-        end: "15:00"
+        start: "11:30"
+        end: "16:30"
         push: true                 # 午间推送当前在榜热点
         report_mode: "current"     # 当前在榜的新闻
         # analyze 继承 default: false → 午间不做 AI 分析，节省 API
         # once 继承 default（push: true）→ 只推一次
 
+        analyze: true
       closing_summary:
         name: "收工汇总"
         start: "17:00"
